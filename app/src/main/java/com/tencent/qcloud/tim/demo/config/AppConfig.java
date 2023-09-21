@@ -14,5 +14,5 @@ public class AppConfig {
     // long connection addr: china、india ...
     public static int DEMO_TEST_ENVIRONMENT = 0;
     // logined appid
-    public static int DEMO_SDK_APPID = 0;
+    public static int DEMO_SDK_APPID = 20004058;
 }

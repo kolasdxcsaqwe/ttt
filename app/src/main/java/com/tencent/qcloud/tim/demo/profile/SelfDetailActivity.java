@@ -15,6 +15,7 @@ import com.tencent.imsdk.v2.V2TIMUserFullInfo;
 import com.tencent.imsdk.v2.V2TIMValueCallback;
 import com.tencent.qcloud.tim.demo.R;
 import com.tencent.qcloud.tim.demo.bean.UserInfo;
+import com.tencent.qcloud.tim.demo.main.MyQrcodeActivity;
 import com.tencent.qcloud.tim.demo.utils.Constants;
 import com.tencent.qcloud.tim.demo.utils.DemoLog;
 import com.tencent.qcloud.tuicore.util.ErrorMessageConverter;
@@ -67,6 +68,7 @@ public class SelfDetailActivity extends BaseLightActivity implements View.OnClic
         genderLv = findViewById(R.id.modify_gender_lv);
         birthdayLv = findViewById(R.id.modify_birthday_lv);
         signatureLv = findViewById(R.id.modify_signature_lv);
+        findViewById(R.id.myQrcode).setOnClickListener(this);
 
         setupViews();
     }
@@ -209,6 +211,12 @@ public class SelfDetailActivity extends BaseLightActivity implements View.OnClic
             popupInputCard.show(rootView, Gravity.BOTTOM);
         } else if (v == titleBarLayout.getLeftGroup()) {
             finish();
+        }
+        else if(v.getId()==R.id.myQrcode)
+        {
+            Intent intent=new Intent();
+            intent.setClass(this, MyQrcodeActivity.class);
+            startActivity(intent);
         }
     }
 

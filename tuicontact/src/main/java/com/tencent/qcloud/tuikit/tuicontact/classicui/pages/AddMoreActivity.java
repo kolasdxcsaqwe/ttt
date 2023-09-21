@@ -79,6 +79,13 @@ public class AddMoreActivity extends BaseLightActivity implements IAddMoreActivi
         }
 
         idLabel = findViewById(R.id.id_label);
+        idLabel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MyQrCodeDialog myQrCodeDialog=new MyQrCodeDialog(AddMoreActivity.this);
+                myQrCodeDialog.show();
+            }
+        });
         notFoundTip = findViewById(R.id.not_found_tip);
         searchBtn = findViewById(R.id.search_button);
         detailArea = findViewById(R.id.friend_detail_area);

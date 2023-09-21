@@ -80,4 +80,10 @@
     <color name="demo_community_page_status_bar_color">#EBECF0</color>
 
     <color name="demo_im_about_item_bg">#E7F2FF</color>
+    <color name="color_black_333333">#333333</color>
+    <color name="color_gray_alpha40">#66000000</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_eff1f4">#EFF1F4</color>
+    <color name="color_337eff">#337EFF</color>
+
 </resources>

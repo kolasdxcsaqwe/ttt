@@ -34,13 +34,19 @@ import com.tencent.imsdk.v2.V2TIMFriendApplication;
 import com.tencent.imsdk.v2.V2TIMFriendApplicationResult;
 import com.tencent.imsdk.v2.V2TIMFriendshipListener;
 import com.tencent.imsdk.v2.V2TIMManager;
+import com.tencent.imsdk.v2.V2TIMUserFullInfo;
 import com.tencent.imsdk.v2.V2TIMValueCallback;
+import com.tencent.qcloud.tim.demo.QrCaptureActivity;
 import com.tencent.qcloud.tim.demo.R;
 import com.tencent.qcloud.tim.demo.config.AppConfig;
 import com.tencent.qcloud.tim.demo.profile.ProfileFragment;
+import com.tencent.qcloud.tim.demo.profile.TaskFragment;
 import com.tencent.qcloud.tim.demo.push.HandleOfflinePushCallBack;
 import com.tencent.qcloud.tim.demo.push.OfflinePushConfigs;
 import com.tencent.qcloud.tim.demo.utils.DemoLog;
+import com.tencent.qcloud.tim.demo.utils.HttpRequest;
+import com.tencent.qcloud.tim.demo.utils.OkhttpCallBack;
+import com.tencent.qcloud.tim.demo.utils.SPUtils;
 import com.tencent.qcloud.tim.demo.utils.TUIKitConstants;
 import com.tencent.qcloud.tim.demo.utils.TUIUtils;
 import com.tencent.qcloud.tuicore.BuildConfig;
@@ -62,6 +68,10 @@ import com.tencent.qcloud.tuikit.tuicontact.TUIContactConstants;
 import com.tencent.qcloud.tuikit.tuicontact.classicui.pages.TUIContactFragment;
 import com.tencent.qcloud.tuikit.tuiconversation.TUIConversationConstants;
 import com.tencent.qcloud.tuikit.tuiconversation.classicui.page.TUIConversationFragmentContainer;
+
+import org.json.JSONObject;
+
+import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -70,6 +80,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
+import okhttp3.Call;
 
 public class MainActivity extends BaseLightActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -179,6 +191,46 @@ public class MainActivity extends BaseLightActivity {
         initMenuAction();
         initTabs();
         setConversationTitleBar();
+        getUrl();
+        setAuth();
+    }
+
+    //设置加好友需要强制验证
+    private void setAuth()
+    {
+        V2TIMUserFullInfo v2TIMUserFullInfo = new V2TIMUserFullInfo();
+
+        v2TIMUserFullInfo.setAllowType(1);
+
+        V2TIMManager.getInstance().setSelfInfo(v2TIMUserFullInfo, new V2TIMCallback() {
+            @Override
+            public void onError(int code, String desc) {
+                DemoLog.e(TAG, "modifySelfProfile err code = " + code + ", desc = " + ErrorMessageConverter.convertIMError(code, desc));
+                ToastUtil.toastShortMessage("Error code = " + code + ", desc = " + ErrorMessageConverter.convertIMError(code, desc));
+            }
+
+            @Override
+            public void onSuccess() {
+                DemoLog.i(TAG, "modifySelfProfile success");
+            }
+        });
+    }
+    private void getUrl() {
+        HttpRequest.get(HttpRequest.systemConfig, new OkhttpCallBack(false, this) {
+            @Override
+            public void onHttpFailure(@NonNull Call call, @NonNull IOException e) {
+
+            }
+
+            @Override
+            public void onHttpResponse(@NonNull Call call, @NonNull JSONObject jsonObject, boolean isSuccess, String msg) throws IOException {
+                if (isSuccess) {
+                    SPUtils.getInstance().save(SPUtils.ConfigData, jsonObject.optJSONObject("data").toString());
+                } else {
+                    ToastUtil.toastShortMessage(msg);
+                }
+            }
+        });
     }
 
     private void initTabs() {
@@ -194,24 +246,24 @@ public class MainActivity extends BaseLightActivity {
         conversationBean.weight = 100;
         tabBeanList.add(conversationBean);
 
-        // community
-        communityBean = new TabBean();
-        communityBean.normalIcon = R.attr.demo_main_tab_community_normal_bg;
-        communityBean.selectedIcon = R.attr.demo_main_tab_community_selected_bg;
-        communityBean.text = R.string.tab_community_tab_text;
-        communityBean.fragment = new TUICommunityFragment();
-        communityBean.weight = 90;
-        tabBeanList.add(communityBean);
-
         // contacts
         contactsBean = new TabBean();
         contactsBean.normalIcon = R.attr.demo_main_tab_contact_normal_bg;
         contactsBean.selectedIcon = R.attr.demo_main_tab_contact_selected_bg;
         contactsBean.text = R.string.tab_contact_tab_text;
         contactsBean.fragment = new TUIContactFragment();
-        contactsBean.weight = 80;
+        contactsBean.weight = 90;
         contactsBean.showUnread = true;
         tabBeanList.add(contactsBean);
+
+        // community
+        communityBean = new TabBean();
+        communityBean.normalIconResource = R.drawable.cloud_normal;
+        communityBean.selectedIconResource = R.drawable.cloud_selected;
+        communityBean.text = R.string.tab_community_tab_text;
+        communityBean.fragment = new TaskFragment();
+        communityBean.weight = 80;
+        tabBeanList.add(communityBean);
 
         // profile
         profileBean = new TabBean();
@@ -494,6 +546,18 @@ public class MainActivity extends BaseLightActivity {
                     TUIUtils.startActivity("StartGroupChatActivity", bundle);
                 }
 
+                if (TextUtils.equals(action.getActionName(), getResources().getString(R.string.add_friend))) {
+                    Bundle bundle = new Bundle();
+                    bundle.putBoolean(TUIContactConstants.GroupType.GROUP, false);
+                    TUIUtils.startActivity("AddMoreActivity", bundle);
+                }
+
+                if (TextUtils.equals(action.getActionName(), getResources().getString(R.string.scan_qrcode))) {
+                    Intent intent = new Intent(MainActivity.this, QrCaptureActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    MainActivity.this.startActivity(intent);
+                }
+
                 menu.hide();
             }
         };
@@ -502,14 +566,14 @@ public class MainActivity extends BaseLightActivity {
 
         PopMenuAction action = new PopMenuAction();
 
-        action.setActionName(getResources().getString(R.string.start_conversation));
         action.setActionClickListener(popActionClickListener);
-        action.setIconResId(R.drawable.create_c2c);
+        action.setActionName(getResources().getString(R.string.add_friend));
+        action.setIconResId(com.tencent.qcloud.tuikit.tuicontact.R.drawable.contact_add_friend);
         menuActions.add(action);
 
         action = new PopMenuAction();
-        action.setActionName(getResources().getString(R.string.create_group_chat));
-        action.setIconResId(R.drawable.group_icon);
+        action.setActionName(getResources().getString(R.string.scan_qrcode));
+        action.setIconResId(R.drawable.icon_qr);
         action.setActionClickListener(popActionClickListener);
         menuActions.add(action);
 
@@ -542,6 +606,12 @@ public class MainActivity extends BaseLightActivity {
                     bundle.putBoolean(TUIContactConstants.GroupType.GROUP, true);
                     TUIUtils.startActivity("AddMoreActivity", bundle);
                 }
+                if (TextUtils.equals(action.getActionName(), getResources().getString(R.string.scan_qrcode))) {
+                    Intent intent = new Intent(MainActivity.this, QrCaptureActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    MainActivity.this.startActivity(intent);
+                }
+
                 menu.hide();
             }
         };
@@ -552,8 +622,8 @@ public class MainActivity extends BaseLightActivity {
         menuActionList.add(action);
 
         action = new PopMenuAction();
-        action.setActionName(getResources().getString(R.string.add_group));
-        action.setIconResId(com.tencent.qcloud.tuikit.tuicontact.R.drawable.contact_add_group);
+        action.setActionName(getResources().getString(R.string.scan_qrcode));
+        action.setIconResId(R.drawable.icon_qr);
         action.setActionClickListener(popActionClickListener);
         menuActionList.add(action);
         menu.setMenuAction(menuActionList);
@@ -798,13 +868,16 @@ public class MainActivity extends BaseLightActivity {
 
     static class TabBean {
         int weight;
-        int normalIcon;
-        int selectedIcon;
+        int normalIcon=0;
+        int selectedIcon=0;
         int text;
         Fragment fragment;
         long unreadCount;
         boolean showUnread = false;
         boolean unreadClearEnable = false;
+
+        int normalIconResource;
+        int selectedIconResource;
     }
 
     class TabAdapter extends RecyclerView.Adapter<TabAdapter.TabViewHolder> {
@@ -823,11 +896,25 @@ public class MainActivity extends BaseLightActivity {
             holder.itemView.setLayoutParams(params);
             holder.textView.setText(tabBean.text);
             if (selectedItem == tabBean) {
-                holder.imageView.setBackgroundResource(TUIThemeManager.getAttrResId(MainActivity.this, tabBean.selectedIcon));
+                if(tabBean.selectedIcon==0)
+                {
+                    holder.imageView.setBackgroundResource(tabBean.selectedIconResource);
+                }
+                else
+                {
+                    holder.imageView.setBackgroundResource(TUIThemeManager.getAttrResId(MainActivity.this, tabBean.selectedIcon));
+                }
                 holder.textView.setTextColor(
                     getResources().getColor(TUIThemeManager.getAttrResId(MainActivity.this, R.attr.demo_main_tab_selected_text_color)));
             } else {
-                holder.imageView.setBackgroundResource(TUIThemeManager.getAttrResId(MainActivity.this, tabBean.normalIcon));
+                if(tabBean.normalIcon==0)
+                {
+                    holder.imageView.setBackgroundResource(tabBean.normalIconResource);
+                }
+                else
+                {
+                    holder.imageView.setBackgroundResource(TUIThemeManager.getAttrResId(MainActivity.this, tabBean.normalIcon));
+                }
                 holder.textView.setTextColor(getResources().getColor(TUIThemeManager.getAttrResId(MainActivity.this, R.attr.demo_main_tab_normal_text_color)));
             }
             if (tabBean.showUnread && tabBean.unreadCount > 0) {

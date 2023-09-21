@@ -23,6 +23,7 @@ import com.tencent.imsdk.v2.V2TIMSDKListener;
 import com.tencent.imsdk.v2.V2TIMUserFullInfo;
 import com.tencent.imsdk.v2.V2TIMValueCallback;
 import com.tencent.qcloud.tim.demo.R;
+import com.tencent.qcloud.tim.demo.about.AboutActivity;
 import com.tencent.qcloud.tim.demo.config.AppConfig;
 import com.tencent.qcloud.tim.demo.login.StyleSelectActivity;
 import com.tencent.qcloud.tim.demo.login.ThemeSelectActivity;
@@ -121,31 +122,36 @@ public class ProfileLayout extends FrameLayout implements View.OnClickListener {
         ProfileSetting allowTypeSetting = new ProfileSetting();
         allowTypeSetting.setWeight(700);
         allowTypeSetting.setSettingView(allowTypeView);
-        settingsList.add(allowTypeSetting);
+        allowTypeView.setVisibility(GONE);
+//        settingsList.add(allowTypeSetting);
 
         View statusView = inflate(getContext(), R.layout.profile_status_layout, null);
         ProfileSetting statusSetting = new ProfileSetting();
         statusSetting.setWeight(600);
         statusSetting.setSettingView(statusView);
-        settingsList.add(statusSetting);
+        statusView.setVisibility(GONE);
+//        settingsList.add(statusSetting);
 
         View recentCallsView = inflate(getContext(), R.layout.profile_settings_recent_calls, null);
         ProfileSetting recentCallsSetting = new ProfileSetting();
         recentCallsSetting.setWeight(400);
         recentCallsSetting.setSettingView(recentCallsView);
-        settingsList.add(recentCallsSetting);
+        recentCallsView.setVisibility(GONE);
+//        settingsList.add(recentCallsSetting);
 
         View selectStyleView = inflate(getContext(), R.layout.profile_settings_select_style, null);
         ProfileSetting selectStyleSetting = new ProfileSetting();
         selectStyleSetting.setWeight(300);
         selectStyleSetting.setSettingView(selectStyleView);
-        settingsList.add(selectStyleSetting);
+        selectStyleView.setVisibility(GONE);
+//        settingsList.add(selectStyleSetting);
 
         View selectThemeView = inflate(getContext(), R.layout.profile_settings_select_theme, null);
         ProfileSetting selectThemeSetting = new ProfileSetting();
         selectThemeSetting.setWeight(200);
         selectThemeSetting.setSettingView(selectThemeView);
-        settingsList.add(selectThemeSetting);
+        selectThemeView.setVisibility(GONE);
+//        settingsList.add(selectThemeSetting);
 
         View aboutIMView = inflate(getContext(), R.layout.profile_settings_about_im, null);
         ProfileSetting aboutIMSetting = new ProfileSetting();
@@ -153,7 +159,7 @@ public class ProfileLayout extends FrameLayout implements View.OnClickListener {
         aboutIMSetting.setSettingView(aboutIMView);
         settingsList.add(aboutIMSetting);
 
-        settingsList.addAll(getExtensionMoreSettings());
+//        settingsList.addAll(getExtensionMoreSettings());
         Collections.sort(settingsList, new Comparator<ProfileSetting>() {
             @Override
             public int compare(ProfileSetting o1, ProfileSetting o2) {
@@ -421,8 +427,11 @@ public class ProfileLayout extends FrameLayout implements View.OnClickListener {
                 }
             });
         } else if (v.getId() == R.id.about_im) {
-            Intent intent = new Intent(getContext(), AboutIMActivity.class);
+//            Intent intent = new Intent(getContext(), AboutIMActivity.class);
+//            getContext().startActivity(intent);
+            Intent intent = new Intent(getContext(), AboutActivity.class);
             getContext().startActivity(intent);
+
         } else if (v.getId() == R.id.select_style) {
             StyleSelectActivity.OnResultReturnListener listener = new StyleSelectActivity.OnResultReturnListener() {
                 @Override

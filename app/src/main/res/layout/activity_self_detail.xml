@@ -81,6 +81,13 @@
                 app:name="@string/modify_account" />
 
             <com.tencent.qcloud.tuikit.timcommon.component.LineControllerView
+                android:id="@+id/myQrcode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/demo_profile_item_height"
+                app:isTop="true"
+                app:name="@string/myqrcode" />
+
+            <com.tencent.qcloud.tuikit.timcommon.component.LineControllerView
                 android:id="@+id/modify_signature_lv"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/demo_profile_item_height"

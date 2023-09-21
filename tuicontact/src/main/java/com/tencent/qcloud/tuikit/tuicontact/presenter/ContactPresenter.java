@@ -150,10 +150,10 @@ public class ContactPresenter {
                                    .setItemBeanType(ContactItemBean.ITEM_BEAN_TYPE_CONTROLLER)
                                    .setTop(true)
                                    .setBaseIndexTag(ContactItemBean.INDEX_STRING_TOP));
-                dataSource.add((ContactItemBean) new ContactItemBean(TUIContactService.getAppContext().getResources().getString(R.string.group))
-                                   .setItemBeanType(ContactItemBean.ITEM_BEAN_TYPE_CONTROLLER)
-                                   .setTop(true)
-                                   .setBaseIndexTag(ContactItemBean.INDEX_STRING_TOP));
+//                dataSource.add((ContactItemBean) new ContactItemBean(TUIContactService.getAppContext().getResources().getString(R.string.group))
+//                                   .setItemBeanType(ContactItemBean.ITEM_BEAN_TYPE_CONTROLLER)
+//                                   .setTop(true)
+//                                   .setBaseIndexTag(ContactItemBean.INDEX_STRING_TOP));
                 dataSource.add((ContactItemBean) new ContactItemBean(TUIContactService.getAppContext().getResources().getString(R.string.blacklist))
                                    .setItemBeanType(ContactItemBean.ITEM_BEAN_TYPE_CONTROLLER)
                                    .setTop(true)

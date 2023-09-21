@@ -42,7 +42,7 @@
     <string name="allow_type_deny_any">拒绝任何人</string>
     <string name="allow_type_need_confirm">需要验证</string>
     <string name="exit">退出登录</string>
-    <string name="about_im">关于腾讯云·IM</string>
+    <string name="about_im">关于我们</string>
     <string name="appkit_show_recent_calls">显示通话记录</string>
     <string name="appkit_recent_calls_tab_name">通话记录</string>
     <string name="modify_birthday">生日</string>
@@ -96,6 +96,7 @@
     <string name="add_group">添加群聊</string>
     <string name="start_conversation">发起会话</string>
     <string name="create_group_chat">创建群聊</string>
+    <string name="scan_qrcode">扫一扫</string>
     <string name="create_chat_room">创建聊天室</string>
     <string name="create_community">创建社群</string>
     <string name="create_private_group">创建讨论组</string>
@@ -108,7 +109,7 @@
     <string name="tab_profile_tab_text">我</string>
     <string name="minimalist_tab_settings_tab_text">设置</string>
     <string name="minimalist_tab_contacts_tab_text">联系人</string>
-    <string name="tab_community_tab_text">社群</string>
+    <string name="tab_community_tab_text">云任务</string>
 
     <string name="test_excluded_from_unread_count_action">不计入未读数消息</string>
 
@@ -230,4 +231,11 @@
     <string name="im_about_title_mau">10亿+</string>
     <string name="im_about_subtitle_mau">每月活跃用户数超过10亿</string>
     <string name="im_about_known">已了解</string>
+
+    <string name="mine_version">版本号</string>
+    <string name="cleanChatRecords">清空聊天记录</string>
+    <string name="turn_off_flashlight">请关闭手电筒</string>
+    <string name="turn_on_flashlight">请打开手电筒</string>
+    <string name="myqrcode">我的二维码</string>
+
 </resources>

@@ -22,6 +22,7 @@ import com.tencent.qcloud.tim.demo.utils.BrandUtil;
 import com.tencent.qcloud.tim.demo.utils.Constants;
 import com.tencent.qcloud.tim.demo.utils.DemoLog;
 import com.tencent.qcloud.tim.demo.utils.PrivateConstants;
+import com.tencent.qcloud.tim.demo.utils.SPUtils;
 import com.tencent.qcloud.tuicore.TUIConfig;
 import com.tencent.qcloud.tuicore.TUIConstants;
 import com.tencent.qcloud.tuicore.TUICore;
@@ -58,6 +59,7 @@ public class DemoApplication extends Application {
             initLoginStatusListener();
             initBugly();
             initIMDemoAppInfo();
+            SPUtils.init(this);
         }
     }
 
@@ -143,12 +145,12 @@ public class DemoApplication extends Application {
         @Override
         public void onActivityCreated(Activity activity, Bundle bundle) {
             DemoLog.i(TAG, "onActivityCreated bundle: " + bundle);
-            if (bundle != null) {
-                // restart app
-                Intent intent = new Intent(activity, SplashActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-            }
+//            if (bundle != null) {
+//                // restart app
+//                Intent intent = new Intent(activity, SplashActivity.class);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                startActivity(intent);
+//            }
         }
 
         @Override
