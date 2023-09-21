@@ -1,17 +1,1 @@
-Internal error. Please refer to https://code.google.com/p/android/issues
-
-com.intellij.ide.plugins.PluginManagerCore$EssentialPluginMissingException: Missing essential plugins: com.android.tools.design, org.jetbrains.android
-    at com.intellij.ide.plugins.PluginManagerCore.checkEssentialPluginsAreAvailable(PluginManagerCore.java:750)
-    at com.intellij.ide.plugins.PluginManagerCore.initializePlugins(PluginManagerCore.java:843)
-    at com.intellij.ide.plugins.PluginManagerCore.initializeAndSetPlugins(PluginManagerCore.java:1047)
-    at com.intellij.ide.plugins.PluginDescriptorLoader$scheduleLoading$pluginSetDeferred$1.invokeSuspend(PluginDescriptorLoader.kt:397)
-    at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-    at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
-    at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
-    at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
-    at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
-    at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
-
------
-Your JRE: 17.0.6+0-b2043.56-10027231 amd64 (JetBrains s.r.o.)
-E:\AndroidStudio2023\jbr
+implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
