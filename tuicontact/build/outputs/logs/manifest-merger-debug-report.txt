@@ -1,0 +1,191 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:2:1-112:12
+INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:2:1-112:12
+INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:2:1-112:12
+	package
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+		INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:4:5-111:19
+provider#com.tencent.qcloud.tuikit.tuicontact.TUIContactService
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:5:9-9:39
+	android:enabled
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:8:13-35
+	android:authorities
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:7:13-67
+	android:exported
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:9:13-37
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:6:13-46
+activity#com.tencent.qcloud.tuikit.tuicontact.classicui.pages.AddMoreActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:14:9-16:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:16:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:15:13-60
+activity#com.tencent.qcloud.tuikit.tuicontact.classicui.pages.FriendProfileActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:17:9-19:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:19:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:18:13-66
+activity#com.tencent.qcloud.tuikit.tuicontact.classicui.pages.NewFriendActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:20:9-22:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:22:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:21:13-62
+activity#com.tencent.qcloud.tuikit.tuicontact.classicui.pages.BlackListActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:23:9-25:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:25:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:24:13-62
+activity#com.tencent.qcloud.tuikit.tuicontact.classicui.pages.GroupListActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:26:9-28:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:28:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:27:13-62
+activity#com.tencent.qcloud.tuikit.tuicontact.classicui.pages.StartC2CChatActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:30:9-32:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:32:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:31:13-65
+activity#com.tencent.qcloud.tuikit.tuicontact.classicui.pages.StartGroupChatActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:33:9-36:73
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:35:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:36:13-70
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:34:13-67
+activity#com.tencent.qcloud.tuikit.tuicontact.classicui.pages.ForwardSelectGroupActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:38:9-41:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:41:13-49
+	android:launchMode
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:40:13-48
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:39:13-71
+activity#com.tencent.qcloud.tuikit.tuicontact.classicui.pages.StartGroupMemberSelectActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:42:9-45:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:45:13-49
+	android:launchMode
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:44:13-48
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:43:13-75
+activity#com.tencent.qcloud.tuikit.tuicontact.classicui.pages.CreateGroupActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:47:9-49:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:49:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:48:13-64
+activity#com.tencent.qcloud.tuikit.tuicontact.classicui.pages.GroupTypeSelectActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:51:9-53:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:53:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:52:13-68
+provider#com.tencent.qcloud.tuikit.tuicontact.classicui.ClassicUIExtensionObserver
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:55:9-59:39
+	android:enabled
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:58:13-35
+	android:authorities
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:57:13-77
+	android:exported
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:59:13-37
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:56:13-65
+activity#com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.FriendProfileMinimalistActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:68:9-70:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:70:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:69:13-79
+activity#com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.NewFriendApplicationMinimalistActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:71:9-73:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:73:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:72:13-86
+activity#com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.NewFriendApplicationDetailMinimalistActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:74:9-76:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:76:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:75:13-92
+activity#com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.BlackListMinimalistActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:77:9-79:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:79:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:78:13-75
+activity#com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.GroupListMinimalistActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:80:9-82:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:82:13-49
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:81:13-75
+activity#com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.StartC2CChatMinimalistActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:84:9-87:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:87:13-49
+	android:theme
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:86:13-70
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:85:13-78
+activity#com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.StartGroupChatMinimalistActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:88:9-92:73
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:90:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:92:13-70
+	android:theme
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:91:13-70
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:89:13-80
+activity#com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.StartGroupMemberSelectMinimalistActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:94:9-97:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:97:13-49
+	android:launchMode
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:96:13-48
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:95:13-88
+activity#com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.CreateGroupMinimalistActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:99:9-102:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:102:13-49
+	android:theme
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:101:13-70
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:100:13-77
+activity#com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.GroupTypeSelectMinimalistActivity
+ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:104:9-107:52
+	android:screenOrientation
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:107:13-49
+	android:theme
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:106:13-70
+	android:name
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:105:13-81
+uses-sdk
+INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+		INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+		ADDED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+		INJECTED from /Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml

@@ -1,0 +1,190 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.qcloud.tuikit.tuicontact" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="16"
+6-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml
+8
+9    <application>
+9-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:4:5-111:19
+10        <provider
+10-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:5:9-9:39
+11            android:name="com.tencent.qcloud.tuikit.tuicontact.TUIContactService"
+11-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:6:13-46
+12            android:authorities="${applicationId}.TUIContact.Init"
+12-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:7:13-67
+13            android:enabled="true"
+13-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:8:13-35
+14            android:exported="false" />
+14-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:9:13-37
+15
+16        <!-- **************** Classic UI Activity Start **************** -->
+17        <activity
+17-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:14:9-16:52
+18            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.AddMoreActivity"
+18-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:15:13-60
+19            android:screenOrientation="portrait" />
+19-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:16:13-49
+20        <activity
+20-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:17:9-19:52
+21            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.FriendProfileActivity"
+21-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:18:13-66
+22            android:screenOrientation="portrait" />
+22-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:19:13-49
+23        <activity
+23-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:20:9-22:52
+24            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.NewFriendActivity"
+24-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:21:13-62
+25            android:screenOrientation="portrait" />
+25-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:22:13-49
+26        <activity
+26-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:23:9-25:52
+27            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.BlackListActivity"
+27-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:24:13-62
+28            android:screenOrientation="portrait" />
+28-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:25:13-49
+29        <activity
+29-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:26:9-28:52
+30            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.GroupListActivity"
+30-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:27:13-62
+31            android:screenOrientation="portrait" />
+31-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:28:13-49
+32        <activity
+32-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:30:9-32:52
+33            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.StartC2CChatActivity"
+33-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:31:13-65
+34            android:screenOrientation="portrait" />
+34-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:32:13-49
+35        <activity
+35-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:33:9-36:73
+36            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.StartGroupChatActivity"
+36-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:34:13-67
+37            android:screenOrientation="portrait"
+37-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:35:13-49
+38            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+38-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:36:13-70
+39        <activity
+39-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:38:9-41:52
+40            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.ForwardSelectGroupActivity"
+40-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:39:13-71
+41            android:launchMode="singleInstance"
+41-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:40:13-48
+42            android:screenOrientation="portrait" />
+42-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:41:13-49
+43        <activity
+43-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:42:9-45:52
+44            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.StartGroupMemberSelectActivity"
+44-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:43:13-75
+45            android:launchMode="singleInstance"
+45-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:44:13-48
+46            android:screenOrientation="portrait" />
+46-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:45:13-49
+47        <activity
+47-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:47:9-49:52
+48            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.CreateGroupActivity"
+48-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:48:13-64
+49            android:screenOrientation="portrait" />
+49-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:49:13-49
+50        <activity
+50-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:51:9-53:52
+51            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.GroupTypeSelectActivity"
+51-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:52:13-68
+52            android:screenOrientation="portrait" />
+52-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:53:13-49
+53
+54        <provider
+54-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:55:9-59:39
+55            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.ClassicUIExtensionObserver"
+55-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:56:13-65
+56            android:authorities="${applicationId}.TUIContact.ClassicUI.Init"
+56-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:57:13-77
+57            android:enabled="true"
+57-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:58:13-35
+58            android:exported="false" />
+58-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:59:13-37
+59
+60        <!-- **************** Classic UI Activity End **************** -->
+61
+62
+63        <!-- **************** Minimalist UI Activity Start **************** -->
+64        <activity
+64-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:68:9-70:52
+65            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.FriendProfileMinimalistActivity"
+65-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:69:13-79
+66            android:screenOrientation="portrait" />
+66-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:70:13-49
+67        <activity
+67-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:71:9-73:52
+68            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.NewFriendApplicationMinimalistActivity"
+68-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:72:13-86
+69            android:screenOrientation="portrait" />
+69-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:73:13-49
+70        <activity
+70-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:74:9-76:52
+71            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.NewFriendApplicationDetailMinimalistActivity"
+71-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:75:13-92
+72            android:screenOrientation="portrait" />
+72-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:76:13-49
+73        <activity
+73-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:77:9-79:52
+74            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.BlackListMinimalistActivity"
+74-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:78:13-75
+75            android:screenOrientation="portrait" />
+75-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:79:13-49
+76        <activity
+76-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:80:9-82:52
+77            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.GroupListMinimalistActivity"
+77-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:81:13-75
+78            android:screenOrientation="portrait" />
+78-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:82:13-49
+79        <activity
+79-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:84:9-87:52
+80            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.StartC2CChatMinimalistActivity"
+80-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:85:13-78
+81            android:screenOrientation="portrait"
+81-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:87:13-49
+82            android:theme="@style/ContactTransparentPopActivityStyle" />
+82-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:86:13-70
+83        <activity
+83-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:88:9-92:73
+84            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.StartGroupChatMinimalistActivity"
+84-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:89:13-80
+85            android:screenOrientation="portrait"
+85-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:90:13-49
+86            android:theme="@style/ContactTransparentPopActivityStyle"
+86-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:91:13-70
+87            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+87-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:92:13-70
+88        <activity
+88-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:94:9-97:52
+89            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.StartGroupMemberSelectMinimalistActivity"
+89-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:95:13-88
+90            android:launchMode="singleInstance"
+90-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:96:13-48
+91            android:screenOrientation="portrait" />
+91-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:97:13-49
+92        <activity
+92-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:99:9-102:52
+93            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.CreateGroupMinimalistActivity"
+93-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:100:13-77
+94            android:screenOrientation="portrait"
+94-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:102:13-49
+95            android:theme="@style/ContactTransparentPopActivityStyle" />
+95-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:101:13-70
+96        <activity
+96-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:104:9-107:52
+97            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.GroupTypeSelectMinimalistActivity"
+97-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:105:13-81
+98            android:screenOrientation="portrait"
+98-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:107:13-49
+99            android:theme="@style/ContactTransparentPopActivityStyle" />
+99-->/Users/joselyn/Desktop/Project/TMIM/ttt/tuicontact/src/main/AndroidManifest.xml:106:13-70
+100
+101        <!-- **************** Minimalist UI Activity End **************** -->
+102
+103    </application>
+104
+105</manifest>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my-rMM/values-my-rMM.xml",
+            "map": [
+                {
+                    "source": "/Users/joselyn/.gradle/caches/transforms-3/5694752894332824ee6c7a1f6c53dec1/transformed/jetified-push-6.10.0.300/res/values-my-rMM/values-my-rMM.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        }
+    ]
+}

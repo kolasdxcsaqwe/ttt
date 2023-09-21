@@ -1,0 +1,186 @@
+[
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/profile_settings_select_theme.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/profile_settings_select_theme.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/profile_fragment.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/profile_fragment.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_classic_bottom_tab_item_layout.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/main_classic_bottom_tab_item_layout.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/overseas_main_activity.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/overseas_main_activity.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_minimalist_bottom_tab_item_layout.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/main_minimalist_bottom_tab_item_layout.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/theme_style_layout.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/theme_style_layout.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/pop_menu_layout.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/pop_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_theme_language_select.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/activity_theme_language_select.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/demo_profile_minimalist_header_view_layout.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/demo_profile_minimalist_header_view_layout.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/minimalist_profile_fragment.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/minimalist_profile_fragment.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/profile_settings_select_style.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/profile_settings_select_style.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/minimalist_activity_about_im.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/minimalist_activity_about_im.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_dialog.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/layout_dialog.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/minimalist_activity_self_detail.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/minimalist_activity_self_detail.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/profile_settings_recent_calls.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/profile_settings_recent_calls.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/minimalist_profile_status_layout.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/minimalist_profile_status_layout.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/minimalist_profile_settings_select_style.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/minimalist_profile_settings_select_style.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/profile_settings_about_im.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/profile_settings_about_im.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_ensure_dialog.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/layout_ensure_dialog.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/profile_settings_allow_type.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/profile_settings_allow_type.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/profile_about_activity.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/profile_about_activity.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/chat_security_notice_layout.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/chat_security_notice_layout.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_activity.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/main_activity.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_self_detail.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/activity_self_detail.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/minimalist_profile_settings_select_theme.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/minimalist_profile_settings_select_theme.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/minimalist_profile_settings_allow_type.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/minimalist_profile_settings_allow_type.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/profile_status_layout.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/profile_status_layout.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/profile_layout.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/profile_layout.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_register.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/activity_register.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_about_im.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/activity_about_im.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_re_confirm.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/dialog_re_confirm.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/minimalist_profile_layout.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/minimalist_profile_layout.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_theme_select_item.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/layout_theme_select_item.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_task.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/fragment_task.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/im_about_grid_item.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/im_about_grid_item.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_about.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/activity_about.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_myqrcode.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/activity_myqrcode.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/minimalist_profile_settings_about_im.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/minimalist_profile_settings_about_im.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/login_for_dev_activity.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/login_for_dev_activity.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_barcode_scanner.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/custom_barcode_scanner.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_loadinng.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/dialog_loadinng.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/im_about_layout.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/im_about_layout.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_qr_scanner.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/activity_qr_scanner.xml"
+    },
+    {
+        "merged": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/minimalist_profile_settings_recent_calls.xml",
+        "source": "/Users/joselyn/Desktop/Project/TMIM/ttt/app/src/main/res/layout/minimalist_profile_settings_recent_calls.xml"
+    }
+]
