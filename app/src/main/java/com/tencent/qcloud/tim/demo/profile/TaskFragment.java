@@ -6,7 +6,9 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.ConsoleMessage;
 import android.webkit.SslErrorHandler;
+import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -66,6 +68,13 @@ public class TaskFragment extends Fragment {
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 view.loadUrl(request.getUrl().toString());
                 return true;
+            }
+        });
+
+        fragmentTaskBinding.webView.setWebChromeClient(new WebChromeClient(){
+            @Override
+            public boolean onConsoleMessage(ConsoleMessage consoleMessage) {
+                return super.onConsoleMessage(consoleMessage);
             }
         });
         if(!TextUtils.isEmpty(url))

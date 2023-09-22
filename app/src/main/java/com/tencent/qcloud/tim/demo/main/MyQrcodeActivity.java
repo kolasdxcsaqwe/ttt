@@ -19,6 +19,7 @@ import com.tencent.qcloud.tim.demo.BaseActivity;
 import com.tencent.qcloud.tim.demo.R;
 import com.tencent.qcloud.tim.demo.databinding.ActivityMyqrcodeBinding;
 import com.tencent.qcloud.tim.demo.utils.QrcodeGen;
+import com.tencent.qcloud.tuikit.timcommon.component.activities.BaseLightActivity;
 import com.tencent.qcloud.tuikit.timcommon.component.impl.GlideEngine;
 import com.tencent.qcloud.tuikit.timcommon.component.interfaces.ITitleBarLayout;
 
@@ -26,7 +27,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyQrcodeActivity extends BaseActivity {
+public class MyQrcodeActivity extends BaseLightActivity {
 
     ActivityMyqrcodeBinding binding;
     @Override

@@ -85,6 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/demo_profile_item_height"
                 app:isTop="true"
+                app:canNav="true"
                 app:name="@string/myqrcode" />
 
             <com.tencent.qcloud.tuikit.timcommon.component.LineControllerView
