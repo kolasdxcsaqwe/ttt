@@ -10,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -34,6 +35,7 @@ import com.tencent.imsdk.v2.V2TIMFriendApplication;
 import com.tencent.imsdk.v2.V2TIMFriendApplicationResult;
 import com.tencent.imsdk.v2.V2TIMFriendshipListener;
 import com.tencent.imsdk.v2.V2TIMManager;
+import com.tencent.imsdk.v2.V2TIMMessage;
 import com.tencent.imsdk.v2.V2TIMUserFullInfo;
 import com.tencent.imsdk.v2.V2TIMValueCallback;
 import com.tencent.qcloud.tim.demo.QrCaptureActivity;
@@ -56,6 +58,7 @@ import com.tencent.qcloud.tuicore.TUICore;
 import com.tencent.qcloud.tuicore.TUIThemeManager;
 import com.tencent.qcloud.tuicore.util.ErrorMessageConverter;
 import com.tencent.qcloud.tuicore.util.ToastUtil;
+import com.tencent.qcloud.tuikit.timcommon.bean.TUIMessageBean;
 import com.tencent.qcloud.tuikit.timcommon.component.TitleBarLayout;
 import com.tencent.qcloud.tuikit.timcommon.component.UnreadCountTextView;
 import com.tencent.qcloud.tuikit.timcommon.component.action.PopActionClickListener;
@@ -63,6 +66,10 @@ import com.tencent.qcloud.tuikit.timcommon.component.action.PopMenuAction;
 import com.tencent.qcloud.tuikit.timcommon.component.activities.BaseLightActivity;
 import com.tencent.qcloud.tuikit.timcommon.component.interfaces.ITitleBarLayout;
 import com.tencent.qcloud.tuikit.timcommon.util.ScreenUtil;
+import com.tencent.qcloud.tuikit.tuichat.presenter.C2CChatPresenter;
+import com.tencent.qcloud.tuikit.tuichat.presenter.ChatPresenter;
+import com.tencent.qcloud.tuikit.tuichat.util.ChatMessageBuilder;
+import com.tencent.qcloud.tuikit.tuichat.util.ChatMessageParser;
 import com.tencent.qcloud.tuikit.tuicommunity.ui.page.TUICommunityFragment;
 import com.tencent.qcloud.tuikit.tuicontact.TUIContactConstants;
 import com.tencent.qcloud.tuikit.tuicontact.classicui.pages.TUIContactFragment;
@@ -113,6 +120,8 @@ public class MainActivity extends BaseLightActivity {
     private BroadcastReceiver unreadCountReceiver;
     private BroadcastReceiver recentCallsReceiver;
 
+    private BroadcastReceiver OnAddNewFriendReceiver;
+
     private FragmentAdapter fragmentAdapter;
 
     @Override
@@ -122,6 +131,7 @@ public class MainActivity extends BaseLightActivity {
         instance = new WeakReference<>(this);
         initView();
         initUnreadCountReceiver();
+        initOnAddNewFriendReceiver();
         initRecentCallsReceiver();
     }
 
@@ -137,6 +147,35 @@ public class MainActivity extends BaseLightActivity {
         IntentFilter unreadCountFilter = new IntentFilter();
         unreadCountFilter.addAction(TUIConstants.CONVERSATION_UNREAD_COUNT_ACTION);
         LocalBroadcastManager.getInstance(this).registerReceiver(unreadCountReceiver, unreadCountFilter);
+
+    }
+
+    private void initOnAddNewFriendReceiver()
+    {
+        OnAddNewFriendReceiver= new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                    if(intent!=null)
+                    {
+                        String userID=intent.getStringExtra(TUIConstants.NEW_FRIEND_ADDED_USERID);
+
+                        V2TIMManager.getInstance().sendC2CTextMessage("你好", userID, new V2TIMValueCallback<V2TIMMessage>() {
+                            @Override
+                            public void onSuccess(V2TIMMessage v2TIMMessage) {
+                            }
+
+                            @Override
+                            public void onError(int i, String s) {
+
+                            }
+                        });
+                    }
+            }
+        };
+        IntentFilter newFriendFilter = new IntentFilter();
+        newFriendFilter.addAction(TUIConstants.NEW_FRIEND_ADDED);
+        LocalBroadcastManager.getInstance(this).registerReceiver(OnAddNewFriendReceiver, newFriendFilter);
+
     }
 
     private void initRecentCallsReceiver() {
@@ -816,6 +855,10 @@ public class MainActivity extends BaseLightActivity {
         if (recentCallsReceiver != null) {
             LocalBroadcastManager.getInstance(this).unregisterReceiver(recentCallsReceiver);
             recentCallsReceiver = null;
+        }
+        if (OnAddNewFriendReceiver != null) {
+            LocalBroadcastManager.getInstance(this).unregisterReceiver(OnAddNewFriendReceiver);
+            OnAddNewFriendReceiver = null;
         }
     }
 

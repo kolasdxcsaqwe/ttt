@@ -738,5 +738,9 @@ public final class TUIConstants {
 
     // localBroadcast
     public static final String CONVERSATION_UNREAD_COUNT_ACTION = "conversation_unread_count_action";
+
+    public static final String NEW_FRIEND_ADDED = "new_friend_added";
     public static final String UNREAD_COUNT_EXTRA = "unread_count_extra";
+
+    public static final String NEW_FRIEND_ADDED_USERID = "new_friend_added_userid";
 }

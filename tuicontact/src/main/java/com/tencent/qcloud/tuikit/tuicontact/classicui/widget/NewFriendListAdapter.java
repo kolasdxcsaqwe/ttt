@@ -1,6 +1,7 @@
 package com.tencent.qcloud.tuikit.tuicontact.classicui.widget;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,6 +11,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
+import com.tencent.qcloud.tuicore.TUIConstants;
 import com.tencent.qcloud.tuicore.TUICore;
 import com.tencent.qcloud.tuicore.util.ToastUtil;
 import com.tencent.qcloud.tuikit.timcommon.component.impl.GlideEngine;
@@ -109,6 +114,10 @@ public class NewFriendListAdapter extends ArrayAdapter<FriendApplicationBean> {
                 presenter.acceptFriendApplication(bean, new IUIKitCallback<Void>() {
                     @Override
                     public void onSuccess(Void data) {
+                        Intent intent=new Intent();
+                        intent.setAction(TUIConstants.NEW_FRIEND_ADDED);
+                        intent.putExtra(TUIConstants.NEW_FRIEND_ADDED_USERID,bean.getUserId());
+                        LocalBroadcastManager.getInstance(getContext()).sendBroadcast(intent);
                         bean.setAccept(true);
                         refreshList();
                     }
