@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.tencent.qcloud.tim.demo">
 
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
     <application
         android:name=".DemoApplication"
         android:allowBackup="false"
@@ -10,6 +12,8 @@
         android:label="@string/demo_app_name"
         android:supportsRtl="true"
         android:theme="@style/DemoAppTheme">
+
+
         <activity
             android:name=".login.LoginActivity"
             android:screenOrientation="portrait"

@@ -85,5 +85,7 @@
     <color name="color_666666">#666666</color>
     <color name="color_eff1f4">#EFF1F4</color>
     <color name="color_337eff">#337EFF</color>
-
+    <color name="color_gold">#A67E53</color>
+    <color name="bg_app">#F1F1F1</color>
+    <color name="tab_unselect">#c9c9c9</color>
 </resources>
